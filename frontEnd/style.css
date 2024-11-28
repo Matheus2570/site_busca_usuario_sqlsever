@@ -1,0 +1,168 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(57, 155, 82);
+    color: #000000;
+  }
+  
+  h1 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Contêiner geral */
+  .form-container,
+  .user-list {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulários */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Botões */
+  button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .add-user-bnt {
+    background-color: #28a745;
+  }
+  
+  .fetch-user-btn {
+    background-color: #007bff;
+  }
+  
+  .delete-user-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+
+  .update-user-btn{
+    background-color: #28a745;
+  }
+  
+  /* Lista de usuários */
+  .user-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Detalhes do usuário */
+  .user-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Azul claro para destaque */
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Botões na lista de usuários */
+  .user-item button {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 8px 12px;
+  }
+  
+  /* Estilo adicional para títulos */
+  h2 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  
+  /* Estilo para um spinner de carregamento */
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .spinner.show {
+    opacity: 1;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .form-container,
+    .user-list {
+      width: 100%;
+    }
+  
+    .user-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .add-user-btn,
+    .fetch-user-btn {
+      width: 100%;
+    }
+  }
+  

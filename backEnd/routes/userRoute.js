@@ -1,27 +1,22 @@
-const express = require('express');
+// routes/userRoutes.js
+
+const express = require("express");
 const router = express.Router();
-const userController = require('../controllers/userController');
+const userController = require("../controllers/userController");
 
-// Rota GET para listar todos os users
-router.get('/users', userController.getUsers);
+// Rota GET para listar todos os usuários
+router.get("/users", userController.getUsers);
 
-/*
-// Rota Get para listar user pelo Rm
-router.get('/users/id/:id', userController.getUsersById);
+// Rota POST para criar um novo usuário
+router.post("/users", userController.createUser);
 
-// Rota Get para listar user pelo Nome
-router.get('/users/name/:name', userController.getUsersByName);
+// Rota PUT para atualizar um usuário existente
+router.put("/users/:id", userController.updateUser);
 
-// Rota POST para criar um novo user
-router.post('/users', userController.createUsers);
+// Rota DELETE para remover um usuário
+router.delete("/users/:id", userController.deleteUser);
 
-// Rota PUT para atualizar um user existente
-router.put('/users/:id', userController.updateUsers);
-
-// Rota DELETE para remover um user
-router.delete('/users/:id', userController.deleteUsers);
-*/
+// Rota GET para buscar um usuário pelo ID
+router.get("/users/:id", userController.getUserById);
 
 module.exports = router;
-
-

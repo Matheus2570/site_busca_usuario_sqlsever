@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Usuarios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gerenciamento de Usuarios</h1>
+
+    <!-- Formulario para adicionar Usuario -->
+    <div class="form-container">
+      <h2>Adicionar Usuario</h2>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite o nome do usuario" />
+      </div>
+      <div class="form-group">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" placeholder="Digite a idade do usuario" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite o email do usuario"
+        />
+      </div>
+      <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input
+          type="text"
+          id="contact"
+          placeholder="Digite o contato do usuario"
+        />
+      </div>
+      <button class="add-user-bnt" onclick="addUser()">
+        Adicionar Usuario
+      </button>
+    </div>
+    <!-- Fim formulario para adicionar Usuario -->
+
+
+
+    <!-- Formulario para buscar Usuario pelo ID -->
+    <div class="form-container">
+      <h2>Busca Usuario por ID</h2>
+      <div class="form-group">
+        <label for="userId">ID do Usuario</label>
+        <input
+          type="number"
+          name="userId"
+          id="userId"
+          placeholder="Digite o ID do usuario"
+        />
+      </div>
+      <button class="fetch-user-btn" onclick="fetchUserById()">
+        Buscar Usuario
+      </button>
+    </div>
+    <!-- Fim formulario para buscar Usuario -->
+
+
+    <!-- Detalhes do Usuario -->
+    <div class="user-details" id="userDetails"></div>
+    <!-- Fim Detalhes do Usuario -->
+
+
+
+    <!-- Lista de Usuarios -->
+    <div class="user-list" id="userList">
+      <h2>Lista de Usuarios</h2>
+      <!-- Aqui serão listados os usuarios -->
+    </div>
+    <!-- Fim lista de Usuarios -->
+    <script src="script.js"></script>
+  </body>
+</html>
