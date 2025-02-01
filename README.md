@@ -32,7 +32,7 @@ Infelizmente, não é possível visualizar os dados diretamente aqui, pois eles 
    Se você ainda não clonou o repositório, execute o comando abaixo para fazer isso:
 
    ```bash
-   git clone https://github.com/SeuUsuario/SeuRepositorio.git
+   git clone https://github.com/Matheus2570/api_crud_sqlserver.git
 
 2. **Instale as dependências:**
 O projeto utiliza algumas bibliotecas, como express, mssql e outras, para funcionar corretamente. Execute o seguinte comando para instalar as dependências:
