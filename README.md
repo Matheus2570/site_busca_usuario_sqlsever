@@ -2,7 +2,7 @@
 
 Este é um projeto para a escola onde buscamos dados de um banco de dados através de uma API.
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 O projeto é composto pelos seguintes arquivos principais:
 
@@ -10,7 +10,7 @@ O projeto é composto pelos seguintes arquivos principais:
 - `style.css`: O arquivo de estilo que define a aparência e o layout.
 - `script.js`: O arquivo de script para funcionalidades adicionais.
 
-## Tecnologias Utilizadas ✅
+## 🛠️ Tecnologias Utilizadas 
 
 Este projeto utiliza as seguintes tecnologias:
 
@@ -21,7 +21,7 @@ Este projeto utiliza as seguintes tecnologias:
 - **Express**: Framework para facilitar a criação do servidor e rotas no Node.js.
 - **SQL Server**: Banco de dados relacional utilizado para armazenar e recuperar dados.
 
-## Como Visualizar 📌
+## 📌 Como Visualizar
 
 Infelizmente, não é possível visualizar os dados diretamente aqui, pois eles são puxados de um banco de dados através de uma API. No entanto, você pode ver a estrutura da API e a implementação do backend no código-fonte do repositório. Para rodar o projeto localmente e acessar os dados reais, siga as etapas abaixo:
 
